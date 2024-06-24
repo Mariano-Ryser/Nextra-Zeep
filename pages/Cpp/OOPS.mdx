@@ -1,0 +1,83 @@
+
+## Object-Oriented Programming in C++
+
+Object- oriented programming (OOP) is a programming paradigm
+based on the concept of "objects", which can contain data and code that manipulates that data.
+
+C++ supports OOP, and it involves kez concepts such as classes, objects,
+inheritance, polymorphism, encapsulation, and abstraction.
+
+
+## Classes and objects
+
+A class is a blueprint for creating objects (instances). It defines a data
+structure by bundling data (attributes) and methods (functions) that
+operate on the data.
+
+
+### Vamos con algunos ejemplos.
+
+
+```cpp filename="class.cpp" copy showLineNumbers // 
+------ Defining a Class -------
+
+class Rectangle {
+    public:
+        int width, height;
+
+        int Area(){
+            return width * height
+        }
+}
+
+------ Creating Objects -------
+
+int main(){
+    Rectangle rect; //Create an object of Rectangle
+    rect.width = 5;
+    rect.height = 10;
+
+    cout << "Area: " << rect.area() << endl; // Output: Area: 50
+    return 0;
+}
+
+```
+
+## Member Functions
+
+Member functions are `Functions defined inside a class`.
+They operate on the data members of the class.
+
+
+
+```cpp filename="MemberFunctions.cpp" copy showLineNumbers /setDimensions/ 
+------ Defining Meber Functions -------
+
+class Rectangle {
+public:
+    int width, height;
+
+    int area(){
+        return width * height;
+    }
+
+    void setDimensions(int w, int h){
+        width = w;
+        height = h;
+    }
+}
+
+------ Using Meber Functions -------
+
+int main(){
+    Rectangle rect;
+    rect.setDimensions(5, 10);
+
+    cout << "Area: " << rect.area() << endl; // Ouput Area: 50
+    return 0;
+}
+
+```
+What we did above, is to use the inner function of the rectangle to add the dimensions.
+
+

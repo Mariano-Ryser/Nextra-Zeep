@@ -1,0 +1,140 @@
+## Hello MDX
+ 
+import { useState } from 'react'
+ 
+export function Counter({ children }) {
+  const [count, setCount] = useState(0)
+  return (
+    <button onClick={() => setCount(count + 1)}>
+      {children}
+      {count}
+    </button>
+  )
+}
+ 
+<Counter>**Clicks**: </Counter>
+
+---------
+- [x] Write the press release
+- [ ] Update the website
+- [ ] Contact the media
+
+
+## Highlighting Lines
+You can highlight specific lines of code by adding a {} attribute to the code block:
+
+```js {1,4-5}
+import { useState } from 'react'
+ 
+function Counter() {
+  const [count, setCount] = useState(0)
+  return <button onClick={() => setCount(count + 1)}>{count}</button>
+}
+```
+
+## Highlighting Substrings
+You can highlight specific substrings of code by adding a // attribute to the code block:
+
+```js /Counter/ /useState/ /onClick/
+import { useState } from 'react'
+ 
+function Counter() {
+  const [count, setCount] = useState(0)
+  return <button onClick={() => setCount(count + 1)}>{count}</button>
+}
+```
+
+
+
+
+
+
+
+----
+| Syntax        | Description |   Test Text |
+| :------------ | :---------: | ----------: |
+| Header        |    Title    | Here's this |
+| Paragraph     |    Text     |    And more |
+| Strikethrough |             |    ~~Text~~ |
+---
+
+## Long heading about Nextra
+
+```js
+import Link from 'next/link'
+
+export default function Home() {
+  return (
+    <>
+
+  <Link href="/"><h3>/home</h3></Link>
+  <Link href="/proyectos/proyects"><h3>/home/proyects</h3></Link>
+  <Link href="/test/test"><h3>/home/test</h3></Link>
+
+
+  <style jsx>{`
+
+          // Aqui escribo el estilado
+          
+    `}</style>
+    </>
+  )
+}
+
+```
+-----
+```py
+print('hello, world')
+```
+---
+
+
+Inlined syntax highlighting is also supported `let x = 1{:jsx}` via:
+
+------
+
+```js {1,4-5}
+import { useState } from 'react'
+ 
+function Counter() {
+  const [count, setCount] = useState(0)
+  return <button onClick={() => setCount(count + 1)}>{count}</button>
+}
+```
+## Copy Button
+By adding a copy attribute, a copy button will be added to the code block when the user hovers over it:
+
+```js copy
+console.log('hello, world')
+```
+
+## Linea Con numeros
+
+```js showLineNumbers
+import { useState } from 'react'
+ 
+function Counter() {
+  const [count, setCount] = useState(0)
+  return <button onClick={() => setCount(count + 1)}>{count}</button>
+}
+```
+## Filenames and Titles
+You can add a filename or a title to your code blocks by adding a filename attribute:
+
+
+```js filename="example.js" showLineNumbers
+console.log('hello, world')
+```
+
+
+```ansi
+[0m [0;32m✓[0m [0;2msrc/[0mindex[0;2m.test.ts (1)[0m
+  [0;2m Test Files [0m [0;1;32m1 passed[0;98m (1)[0m
+  [0;2m      Tests [0m [0;1;32m1 passed[0;98m (1)[0m
+  [0;2m   Start at [0m 23:32:41
+  [0;2m   Duration [0m 11ms
+  [42;1;39;0m PASS [0;32m Waiting for file changes...[0m
+         [0;2mpress [0;1mh[0;2m to show help, press [0;1mq[0;2m to quit
+```
+
+

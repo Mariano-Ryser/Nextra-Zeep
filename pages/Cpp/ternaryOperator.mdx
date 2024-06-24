@@ -1,0 +1,68 @@
+# Operacion Ternaria
+
+ If, Else de una forma compleja
+```cpp
+int main() {
+
+    int grade = 45;
+
+    if(grade >= 80)
+    {
+        std::cout << "You fail! !";
+    }
+    else{
+        std::cout << "You pass !";
+    }
+    return 0;
+}
+
+//Este resultado seria "You pass!"
+```
+
+Aqui la opcion reducida y mas corta, 
+Actualmente React Js tiene la misma sintaxis
+
+```cpp
+int main() {
+
+  int grade = 75;
+
+  grade >= 60 ? std::cout << "You fail! !" : std::cout << "You pass !";
+
+   return 0;
+}
+
+//Este resultado seria "You fail!"
+
+```
+
+el simbolo "!" antes de la variable significa la negacion de la misma.
+
+```cpp
+int main() {
+
+  bool hungry = true;
+
+  !hungry ? std::cout << "You are hungry !" : std::cout << "You are full !";
+   
+   return 0;
+}
+
+//Este resultado seria "You are full!"
+
+```
+
+Otra opcion
+
+```cpp
+int main() {
+
+  bool hungry = true;
+
+    std::count << (hungry ? "You are hungry" : "You are full");
+  
+   return 0;
+}
+
+//Este resultado seria "You are full!"
+

@@ -5,8 +5,8 @@
   "devFiles": [],
   "ampDevFiles": [],
   "lowPriorityFiles": [
-    "static/M6-2HHP96TCyAXHhhL8sW/_buildManifest.js",
-    "static/M6-2HHP96TCyAXHhhL8sW/_ssgManifest.js"
+    "static/_FoNLyRXTObYdgw98qUGr/_buildManifest.js",
+    "static/_FoNLyRXTObYdgw98qUGr/_ssgManifest.js"
   ],
   "rootMainFiles": [],
   "pages": {
@@ -82,6 +82,14 @@
       "static/chunks/942-4e5174820b908f68.js",
       "static/chunks/pages/MDX/nextraComponents-a034b3d3e685980f.js"
     ],
+    "/Mongo/aggregation": [
+      "static/chunks/webpack-6ef43a8d4a395f49.js",
+      "static/chunks/framework-ecc4130bc7a58a64.js",
+      "static/chunks/main-2340e7dd7876a540.js",
+      "static/css/445c4173ffc2bf04.css",
+      "static/chunks/942-4e5174820b908f68.js",
+      "static/chunks/pages/Mongo/aggregation-82a49b203657badc.js"
+    ],
     "/Mongo/intro": [
       "static/chunks/webpack-6ef43a8d4a395f49.js",
       "static/chunks/framework-ecc4130bc7a58a64.js",
@@ -96,7 +104,7 @@
       "static/chunks/main-2340e7dd7876a540.js",
       "static/css/445c4173ffc2bf04.css",
       "static/chunks/942-4e5174820b908f68.js",
-      "static/chunks/pages/Mongo/mongobash-b071b5ffea3f3532.js"
+      "static/chunks/pages/Mongo/mongobash-7d86f8e3c67e1d28.js"
     ],
     "/Mongo/node": [
       "static/chunks/webpack-6ef43a8d4a395f49.js",
@@ -104,7 +112,7 @@
       "static/chunks/main-2340e7dd7876a540.js",
       "static/css/445c4173ffc2bf04.css",
       "static/chunks/942-4e5174820b908f68.js",
-      "static/chunks/pages/Mongo/node-7fb5c1f347c34027.js"
+      "static/chunks/pages/Mongo/node-3fe57a907fc2a651.js"
     ],
     "/_app": [
       "static/chunks/webpack-6ef43a8d4a395f49.js",

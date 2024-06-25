@@ -148,3 +148,76 @@ db.trips.countDocuments({})
 db.trips.countDocuments({ tripduration: { $gt: 120 }, usertype: "Subscriber" })
 
 ```
+
+## $project
+The $project stage specifies the fields of the output documents.
+ 1 means that the field should be included, and 0 means that the 
+ field should be supressed. The field can also be assigned a new value.
+
+```js copy filename="name" showLineNumbers
+ {
+    $project: {
+        state:1, 
+        zip:1,
+        population:"$pop",
+        _id:0
+    }
+}
+```
+## $set
+The $set stage creates new fields or changes the value of
+ existing fields, and then outputs the documents with the 
+ new fields.
+
+```js copy filename="name" showLineNumbers
+ {
+    $set: {
+        place: {
+            $concat:["$city",",","$state"]
+        },
+        pop:10000
+     }
+  }
+```
+
+## $count
+The $count stage creates a new document, with the number 
+of documents at that stage in the aggregation pipeline assigned 
+to the specified field name.
+
+```js copy filename="name" showLineNumbers
+ {
+  $count: "total_zips"
+}
+```
+
+
+
+
+## 
+```js copy filename="name" showLineNumbers
+ 
+```
+## 
+```js copy filename="name" showLineNumbers
+ 
+```
+
+## Change Decimal 128, string, number etc!
+db.accounts.updateMany(
+  {},
+  [
+    {
+      $set: {
+        balance: {
+          $convert: {
+            input: "$balance",
+            to: "decimal",
+            onError: null,
+            onNull: null
+          }
+        }
+      }
+    }
+  ]
+)

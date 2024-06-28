@@ -1,4 +1,4 @@
-```js copy filename="example.js" showLineNumbers
+``` copy filename="example.js" showLineNumbers
 insertOne()
 insertMany()
 
@@ -154,7 +154,7 @@ The $project stage specifies the fields of the output documents.
  1 means that the field should be included, and 0 means that the 
  field should be supressed. The field can also be assigned a new value.
 
-```js copy filename="name" showLineNumbers
+```copy filename="name" showLineNumbers
  {
     $project: {
         state:1, 
@@ -169,7 +169,7 @@ The $set stage creates new fields or changes the value of
  existing fields, and then outputs the documents with the 
  new fields.
 
-```js copy filename="name" showLineNumbers
+``` copy filename="name" showLineNumbers
  {
     $set: {
         place: {
@@ -185,26 +185,15 @@ The $count stage creates a new document, with the number
 of documents at that stage in the aggregation pipeline assigned 
 to the specified field name.
 
-```js copy filename="name" showLineNumbers
+``` copy filename="name" showLineNumbers
  {
   $count: "total_zips"
 }
 ```
 
 
-
-
-## 
-```js copy filename="name" showLineNumbers
- 
-```
-## 
-```js copy filename="name" showLineNumbers
- 
-```
-
 ## Change Decimal 128, string, number etc!
-```js copy filename="name" showLineNumbers
+```copy filename="name" showLineNumbers
 db.accounts.updateMany(
   {},
   [
@@ -222,4 +211,23 @@ db.accounts.updateMany(
     }
   ]
 )
+```
+
+## Create and Get Index
+```terminal copy filename="terminal" showLineNumbers
+db.customers.createIndex({birthdate:1})
+
+db.custroers.getIndexes()
+```
+
+##  explain()
+Use explain() in a collection when running a query to see the Execution plan. This plan provides the details of the execution stages (IXSCAN , COLLSCAN, FETCH, SORT, etc.).
+``` copy filename="name" showLineNumbers
+ db.customers.explain().find({
+  birthdate: {
+    $gt:ISODate("1995-08-01")
+    }
+  }).sort({
+    email:1
+    })
 ```

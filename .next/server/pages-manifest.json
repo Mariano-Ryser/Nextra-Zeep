@@ -1,1 +1,6 @@
-{"/_error":"pages/_error.js","/Cpp/OOPS":"pages/Cpp/OOPS.html","/_app":"pages/_app.js","/Cpp/calculadora":"pages/Cpp/calculadora.html","/Cpp/helloWorld":"pages/Cpp/helloWorld.html","/Cpp/ternaryOperator":"pages/Cpp/ternaryOperator.html","/Cpp/visualStudio":"pages/Cpp/visualStudio.html","/Git/git":"pages/Git/git.html","/MDX/ejemplosMDX":"pages/MDX/ejemplosMDX.html","/MDX/nextraComponents":"pages/MDX/nextraComponents.html","/Mongo/aggregation":"pages/Mongo/aggregation.html","/Mongo/intro":"pages/Mongo/intro.html","/Mongo/mongobash":"pages/Mongo/mongobash.html","/Mongo/node":"pages/Mongo/node.html","/home":"pages/home.html","/":"pages/index.html","/_document":"pages/_document.js","/404":"pages/404.html"}
+{
+  "/_app": "pages/_app.js",
+  "/_error": "pages/_error.js",
+  "/_document": "pages/_document.js",
+  "/": "pages/index.js"
+}
